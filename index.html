@@ -20,11 +20,27 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
+            <h1>Welcome to Adenture Quest!</h1>
+            <h2>Enter a Name, Choose a Character, and Hit Begin!</h2>
+            <form id="user-form">
+                <label for="name">
+                    Name
+                    <input type="text" name="name">
+                </label>
+                <label for="race">
+                    Wizard
+                    <input type="radio" name="race" value="wizard" id="wizard">
+                </label>
+                <label for="race">
+                    Dwarf
+                    <input type="radio" name="race" value="dwarf" id="dwarf">
+                </label>
+                <label for="race">
+                    Elf
+                    <input type="radio" name="race" value="elf" id="elf">
+                </label>
+                <button type="submit">Begin!</button>
+            </form>
         </section>
     </main>
     <footer>
