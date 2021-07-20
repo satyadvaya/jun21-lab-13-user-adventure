@@ -1,5 +1,6 @@
 import quests from '../data/quest-data.js';
 import findById from '../data/find-by-id.js';
+import { getUser, setUser } from '../data/storage-utils.js';
 
 const searchParams = new URLSearchParams(window.location.search);
 
@@ -25,7 +26,28 @@ for (let choice of quest.choices) {
     const span = document.createElement('span');
     span.textContent = choice.description;
     
-    label.append(radio, span);
-    
+    label.append(radio, span);  
     questChoices.append(label);
 }
+
+const choiceFormDOM = document.getElementById('choice-form');
+
+choiceFormDOM.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const choiceForm = new FormData(choiceFormDOM);
+    
+    const choiceValue = choiceForm.get('choice');
+    const choiceData = findById(quest.choices, choiceValue);
+
+    const user = getUser();
+    user.gold += choiceData.gold;
+    user.hp += choiceData.hp;
+    user.completed[quest.id] = true;
+    setUser(user);
+
+    const returnToMapLink = document.getElementById('return-to-map-link');
+    questDescription.textContent = choiceData.result;
+    choiceFormDOM.classList.add('hidden');
+    returnToMapLink.classList.remove('hidden');
+    
+});
