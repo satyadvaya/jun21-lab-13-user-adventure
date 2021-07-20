@@ -1,11 +1,3 @@
-export default quests;
-
-const quests = [
-    monsters, 
-    treasure,
-    dragon,
-];
-
 const monsters = {
     id: 'monsters',
     title: 'A Den of Monsters',
@@ -144,3 +136,11 @@ const treasure = {
         gold: 0
     }]
 };
+
+const quests = [
+    monsters, 
+    treasure,
+    dragon,
+];
+
+export default quests;
