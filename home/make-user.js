@@ -1,4 +1,4 @@
-export function makeUser(formData) {
+export function makeUser(formData){
     const newUser = {
         gold: 0,
         hp: 35,
