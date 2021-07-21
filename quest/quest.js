@@ -49,5 +49,4 @@ choiceFormDOM.addEventListener('submit', (event) => {
     questDescription.textContent = choiceData.result;
     choiceFormDOM.classList.add('hidden');
     returnToMapLink.classList.remove('hidden');
-    
 });
