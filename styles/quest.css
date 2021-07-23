@@ -1,0 +1,36 @@
+* {
+    text-align: center;
+}
+
+#quest-heading {
+    font-style: italic;
+}
+
+#quest-title {
+
+    margin-bottom: 25px;
+    font-size: larger;
+}
+
+#quest-image {
+
+}
+
+#quest-description {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#quest-choices {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+label {
+    margin: 3px;
+}
+
+button {
+    margin-top: 25px;
+}

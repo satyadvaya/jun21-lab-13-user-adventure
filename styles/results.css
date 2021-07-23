@@ -1,0 +1,14 @@
+#results-header {
+    align-content: center;
+    font-style: italic;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#dead, #alive {
+    font-size: large;
+    font-weight: 800;
+    font-style: italic;
+}
