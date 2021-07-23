@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/home.css">
+        <link rel="stylesheet" href="../styles/quest.css">
     <title>Quest Page</title>
 </head>
-<body>
-    Quest Choice Details
-    <div id="quest-title"></div>
+    <h1 id="quest-heading">Quest Choice Details</h1>
+    <h2 id="quest-title"></h2>
     <img id="quest-image" />
     <p id="quest-description"></p>
 
     <form id="choice-form">
-        <p id="quest-choices"></p>
+        <div id="quest-choices">
+            <!-- <label class="choice-label">
+                <span id="quest-choices"></span>
+
+            </label> -->
+        </div>
         <button id="select-answer">Submit Choice</button>
     </form>
     <a href="../map" class="hidden" id="return-to-map-link">Return to Map</a>

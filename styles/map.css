@@ -1,4 +1,9 @@
+#quest-heading {
+
+}
+
 #quest-list {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
